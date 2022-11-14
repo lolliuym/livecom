@@ -1,0 +1,21 @@
+.swiper-slide {
+  /* margin-right: 20px !important; */
+}
+.slider-img {
+  background: url(https://cdn.bootstrapstudio.io/placeholders/1400x800.png) center center / cover no-repeat;display: flex;border-radius: 25px;
+  height: 200px;
+}
+.slider-content {
+  width: 100px;
+  height:100px;
+  text-align: center;
+}
+.slider-avatar {
+  margin: 0 auto;
+  border-radius: 50%;
+  border-color: var(--bs-blue);
+}
+.avatar--stories {
+  border-radius: 50%;
+  border: 3px solid var(--bs-blue) ;
+}

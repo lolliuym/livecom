@@ -1,0 +1,25 @@
+.box {
+  background: #ffffff;
+  border-radius: 10px;
+}
+.list-item {
+  color: var(--bs-gray-500);
+  padding: 15px 30px;
+  text-align: left;
+}
+.list-item.active { 
+  padding: 15px 30px;
+  background: #eeeeee;
+  color: var(--bs-blue) !important; 
+  border-left: 2px solid var(--bs-pink) 
+}
+.list-item svg  {
+  margin-right: 10px;
+}
+.link {
+  color: var(--bs-gray-500);
+  font-weight: bold
+}
+.list-item.active .link {
+  color: var(--bs-blue) !important; 
+}

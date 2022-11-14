@@ -1,0 +1,29 @@
+.fz-6 {
+  font-size:  6px;
+}
+.wordspace {
+  border-radius: 10px;background: #ffffff;padding: 15px;
+}
+.wordspace__date {
+  color: var(--bs-gray-500);border-radius: 5px;padding: 9px;height: 70px;
+}
+.wordspace__date.active {
+  background: #1769ff;
+  color: var(--bs-white) !important;
+}
+.hr {
+  border-bottom: 1px solid var(--bs-gray-500);margin-top: 20px;margin-bottom: 10px;
+}
+.timetable__date {
+  background: var(--bs-white);border-radius: 5px;padding: 9px;height: 70px;
+  text-align: center;
+}
+.timetable__content {
+  background: var(--bs-light);border-radius: 5px;padding: 9px;height: 100%;
+}
+.timetable__info {
+  border-left: 2px solid var(--bs-yellow) ;
+}
+.wordspace .btn.btn-primary {
+  font-size: 12px;background: var(--bs-body-bg);color: var(--bs-btn-border-color);border-style: none;border-left-width: 0;border-radius: 15px;
+}
