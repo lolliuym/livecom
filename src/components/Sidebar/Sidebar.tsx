@@ -2,39 +2,35 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse, faPeopleGroup, faPhotoFilm, faArrowsTurnToDots } from '@fortawesome/free-solid-svg-icons'
 import { faRectangleList } from '@fortawesome/free-regular-svg-icons'
-import "../assets/styles/sidebar.css"
+import "./sidebar.css"
 
 const Sidebar = () => {
   return (
     <div className="box">
       <ul className="list-unstyled">
-        <li className="list-item">
-        <FontAwesomeIcon icon={faHouse} />
-           <a className="link text-decoration-none" href="#">
+        <li className="list-item">        
+           <a className="link active text-decoration-none" href="#">
+            <FontAwesomeIcon icon={faHouse} />
             Моя страница
           </a>
         </li>
-        <li className="list-item active">
-        <FontAwesomeIcon icon={faRectangleList} />
-           <a className="link text-decoration-none" href="#">
+        <li className="list-item ">
+           <a className="link text-decoration-none" href="#"><FontAwesomeIcon icon={faRectangleList} />
             Новости
           </a>
         </li>
         <li className="list-item">
-        <FontAwesomeIcon icon={faPeopleGroup} />
-           <a className="link text-decoration-none" href="#">
+           <a className="link text-decoration-none" href="#"><FontAwesomeIcon icon={faPeopleGroup} />
             Мероприятия
           </a>
         </li>
         <li className="list-item">
-        <FontAwesomeIcon icon={faPhotoFilm} />
-           <a className="link text-decoration-none" href="#">
+           <a className="link text-decoration-none" href="#"><FontAwesomeIcon icon={faPhotoFilm} />
             Фотогравии
           </a>
         </li>
         <li className="list-item">
-        <FontAwesomeIcon icon={faArrowsTurnToDots} />
-           <a className="link text-decoration-none" href="#">
+           <a className="link text-decoration-none" href="#"> <FontAwesomeIcon icon={faArrowsTurnToDots} />
             Настройки
           </a>
         </li>

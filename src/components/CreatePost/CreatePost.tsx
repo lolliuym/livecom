@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCamera, faCirclePlay, faMusic } from '@fortawesome/free-solid-svg-icons'
 import { faFileLines } from '@fortawesome/free-regular-svg-icons'
-import "../assets/styles/sidebar.css"
+import "./createPost.css"
 
 const CreatePost = () => {
   return (
@@ -11,7 +11,7 @@ const CreatePost = () => {
         <div className="row d-flex  ">
             <div className="col-lg-1 d-lg-flex justify-content-lg-center align-items-lg-center">
                 <div className="d-lg-flex justify-content-lg-center align-items-lg-center">
-                  <img className="w-30 h-30 d-lg-flex rounded-circle" width="50px" height="50px" src="../assets/img/avatar.jpg" />
+                  <img className="d-lg-flex rounded-circle" width="50px" height="50px" src="../assets/img/avatar.jpg" />
 
                   </div>
             </div>

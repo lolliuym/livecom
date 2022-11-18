@@ -1,0 +1,37 @@
+.thumbnail {
+  height:17rem;
+}
+
+.card-content {
+  padding:10px;
+  width:100px;
+  color:var(--bs-white);
+  background:var(--bs-yellow);
+  margin-top:10px;
+  border-radius:10px;
+}
+
+.card-members {
+  padding:5px 10px;
+  background:var(--bs-gray-600);
+  display:flex;
+  border-radius:50px;
+}
+
+.card-members_strong {
+  background:var(--bs-yellow);
+  width:50px;
+  padding:2px;
+  border-radius:15px;
+}
+
+.card-action {
+  border-radius:10px;
+  display:flex;
+  margin:10px 0;
+}
+
+.card-people {
+  display:flex;
+  padding:5px 10px;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "../assets/styles/listStories.css";
+import "./listStories.css";
 
 const ListStories = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
-import "../assets/styles/listEvents.css";
-import "../assets/styles/buttons.css";
-import ActionOfEvents from "./ActionOfEvents";
+import "./listEvents.css";
+import "../../assets/styles/buttons.css";
+import ActionOfEvents from "../ActionOfEvents/ActionOfEvents";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFireFlameCurved, faShare } from "@fortawesome/free-solid-svg-icons";
 
@@ -46,7 +46,7 @@ const ListEvents = () => {
               </div>
             </div>
             <div className="card-people text-dark align-items-center me-auto">
-              <div className="mr-2">
+              <div className="me-2">
                 <img
                   className="rounded-circle -mr-4"
                   src="../assets/images/avatar.jpg"
@@ -84,7 +84,7 @@ const ListEvents = () => {
                 Присоединиться
               </button>
               <div className="d-flex align-content-center align-self-center justify-content-lg-center align-items-lg-center">
-                <p className="fw-bold mb-0  mr-1">
+                <p className="fw-bold mb-0  me-2">
                   <FontAwesomeIcon className="fs-5 text-danger" icon={faFireFlameCurved} />
                   &nbsp;12
                 </p>

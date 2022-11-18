@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/styles/wordspace.css";
+import "./wordspace.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronLeft,
@@ -10,14 +10,14 @@ import {
 
 const Wordspace = () => {
   return (
-    <div className="box px-4 p-4 mt-4">
+    <div className="box px-4 p-4">
       <div className="wordscape">
         <div>
           <div className="d-flex justify-content-between align-items-center align-items-lg-center">
             <h5>Декабрь</h5>
             <div>
-              <FontAwesomeIcon className=" mr-2" icon={faChevronLeft} />
-              <FontAwesomeIcon icon={faChevronRight} />
+              <FontAwesomeIcon className="cursor-pointer me-2" icon={faChevronLeft} />
+              <FontAwesomeIcon className="cursor-pointer" icon={faChevronRight} />
             </div>
           </div>
           <div className="d-flex justify-content-between">

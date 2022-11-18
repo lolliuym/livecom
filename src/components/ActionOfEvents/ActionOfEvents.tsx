@@ -1,6 +1,6 @@
 import React from "react";
-import "../assets/styles/actionOfEvents.css";
-import "../assets/styles/buttons.css";
+import "./actionOfEvents.css";
+import "../../assets/styles/buttons.css";
 
 const ActionOfEvents = () => {
   return (
