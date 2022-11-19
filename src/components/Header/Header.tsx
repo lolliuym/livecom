@@ -1,5 +1,6 @@
 import React from 'react'
-// import logo from '../../assets/images/logo.png'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
@@ -16,7 +17,10 @@ const Header = () => {
           <input type="search" className="form-control" placeholder="Поиск"  />
         </form>
 
-        <div className="d-flex col-3 dropdown  justify-content-end">
+        <div className="d-flex col-3 dropdown  justify-content-end align-items-center">
+          <a href="" className="me-3">
+          <FontAwesomeIcon icon={faCirclePlus} className="text-body  fs-5 "/>
+          </a>
           <a href="#" className="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" className="rounded-circle" />
           </a>
