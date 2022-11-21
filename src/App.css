@@ -32,6 +32,11 @@
   color:var(--bs-cyan);
 }
 
+.box {
+  background:var(--bs-white);
+  border-radius:10px;}
+
+
 .border-none {
   border:none !important;
 }

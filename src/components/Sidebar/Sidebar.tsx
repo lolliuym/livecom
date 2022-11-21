@@ -24,7 +24,6 @@ const Sidebar = () => {
         </li>
         <li className="list-item ">
           <NavLink to="/feed">
-            {" "}
             <a className="link text-decoration-none" href="#">
               <FontAwesomeIcon icon={faRectangleList} />
               Новости
