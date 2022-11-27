@@ -45,6 +45,9 @@
   cursor:pointer !important;
 }
 
+.w-180 {
+  width: 180px;
+}
 @keyframes App-logo-spin {
 
   from {

@@ -6,8 +6,8 @@ import ListStories from '../components/ListStories/ListStories'
 const Feed = () => {
   return (
     <div>
-      <CreatePost />
-      <ListStories />
+      {/* <CreatePost />
+      <ListStories /> */}
       <ListEvents />
     </div>
   )

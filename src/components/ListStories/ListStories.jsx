@@ -5,7 +5,7 @@ import "./listStories.css";
 
 const ListStories = () => {
   return (
-    <div className="box px-4 p-4 mt-4">
+    <div className="p-4 px-4 box">
       <h3 className="text-start">Истории</h3>
       <Swiper
         spaceBetween={10}
@@ -24,7 +24,7 @@ const ListStories = () => {
                   className="avatar--stories"
                 />
               </div>
-              <p className="fw-bold text-primary mt-4">Paragraph</p>
+              <p className="mt-4 fw-bold text-primary">Paragraph</p>
             </div>
           </div>
         </SwiperSlide>
@@ -39,7 +39,7 @@ const ListStories = () => {
                   className="avatar--stories"
                 />
               </div>
-              <p className="fw-bold text-primary mt-4">Paragraph</p>
+              <p className="mt-4 fw-bold text-primary">Paragraph</p>
             </div>
           </div>
         </SwiperSlide>
@@ -54,7 +54,7 @@ const ListStories = () => {
                   className="avatar--stories"
                 />
               </div>
-              <p className="fw-bold text-primary mt-4">Paragraph</p>
+              <p className="mt-4 fw-bold text-primary">Paragraph</p>
             </div>
           </div>
         </SwiperSlide>
@@ -69,7 +69,7 @@ const ListStories = () => {
                   className="avatar--stories"
                 />
               </div>
-              <p className="fw-bold text-primary mt-4">Paragraph</p>
+              <p className="mt-4 fw-bold text-primary">Paragraph</p>
             </div>
           </div>
         </SwiperSlide>
@@ -84,7 +84,7 @@ const ListStories = () => {
                   className="avatar--stories"
                 />
               </div>
-              <p className="fw-bold text-primary mt-4">Paragraph</p>
+              <p className="mt-4 fw-bold text-primary">Paragraph</p>
             </div>
           </div>
         </SwiperSlide>

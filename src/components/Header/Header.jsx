@@ -1,14 +1,13 @@
 import React from 'react'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
+import CreateEvent from '../CreateEvent/CreateEvent'
 
 const Header = () => {
   return (
     <div className="bg-white">
-       <header className="p-3 mb-3 border-bottom">
+       <header className="container p-3 mb-3 border-bottom">
     <div className="container">
       <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" className="d-flex col-3 align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+        <a href="/" className="d-flex col-2 align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
 
           <img src='../assets/images/logo.png' className="me-2" width="40" height="32" alt="LiveCom"/>
         </a>
@@ -17,10 +16,9 @@ const Header = () => {
           <input type="search" className="form-control" placeholder="Поиск"  />
         </form>
 
-        <div className="d-flex col-3 dropdown  justify-content-end align-items-center">
-          <a href="" className="me-3">
-          <FontAwesomeIcon icon={faCirclePlus} className="text-body  fs-5 "/>
-          </a>
+        <div className="d-flex col-4 dropdown  justify-content-end align-items-center">
+        <CreateEvent/>
+          
           <a href="#" className="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" className="rounded-circle" />
           </a>

@@ -6,23 +6,22 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import Wordspace from "./components/Wordspace/Wordspace";
 import Feed from "./pages/Feed";
 import Profile from "./pages/Profile";
-import axios from "axios"
 
 const App = () => {
  
 
   return (
     <div className="App">
-      <BrowserRouter>
+       <BrowserRouter>
         <Header />
         <div className="container">
           <div className="row">
-            <div className="col-3">
+            {/* <div className="col-3">
               <Sidebar />
-            </div>
-            <div className="col-6">
+            </div> */}
+            <div className="col-9">
               <Routes>
-                <Route path={"/feed"} element={<Feed />}>
+                <Route path={"/"} element={<Feed />}>
                   
                 </Route>
                 <Route path={"/profile"} element={<Profile />}>
