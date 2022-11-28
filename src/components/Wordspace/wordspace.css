@@ -65,7 +65,7 @@
 .timetable__date {
   background:var(--bs-white);
   border-radius:5px;
-  padding:9px;
+  padding-right:9px;
   height:70px;
   text-align:center;
 }
@@ -73,12 +73,12 @@
 .timetable__content {
   background:var(--bs-light);
   border-radius:5px;
-  padding:9px;
   height:100%;
 }
 
 .timetable__info {
   border-left:2px solid var(--bs-yellow) ;
+  padding: 10px;
 }
 
 .wordspace .btn.btn-primary {
