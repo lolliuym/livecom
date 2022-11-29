@@ -8,6 +8,7 @@
   transform: translate(-50%, -50%);
   position: fixed;
 }
+
 .calendar__creatingEvent{
   position: absolute;
 

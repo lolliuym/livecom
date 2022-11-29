@@ -39,12 +39,12 @@ const Sidebar = () => {
         <li className="list-item">
           <a className="link text-decoration-none" href="#">
             <FontAwesomeIcon icon={faPhotoFilm} />
-            Фотогравии
+            Фотографии
           </a>
         </li>
         <li className="list-item">
           <a className="link text-decoration-none" href="#">
-            {" "}
+    
             <FontAwesomeIcon icon={faArrowsTurnToDots} />
             Настройки
           </a>

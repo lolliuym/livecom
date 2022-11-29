@@ -6,7 +6,7 @@ const Profile = () => {
   return (
     <div>
       <ProfileHeader />
-      <ProfilePhoto />
+      {/* <ProfilePhoto /> */}
     </div>
   );
 };

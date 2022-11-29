@@ -1,33 +1,35 @@
 .input-group {
-  border:1px solid var(--bs-gray-300);
-  border-radius:20px;
+  border: 1px solid var(--bs-gray-300);
+  border-radius: 20px;
 }
 
 .input-group_text {
-  background:transparent;
-  border:none;
-  padding-right:0;
+  background: transparent;
+  border: none;
+  padding-right: 0;
 }
 
 .input-group_input {
-  border:none;
-  border-radius:20px;
-  width:100px;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
 }
 
 .w-145 {
-  width:145px;
+  width: 145px;
 }
 
 select *
-{ padding:20px;}
+{ padding: 20px;}
+
 .box--calendar {
   position: relative;
 }
+
 .calendar__listOfEvent {
   position: absolute;
-    inset: 0px auto auto 0px;
-    margin: 0px;
-    transform: translate(0px, 40px);
+  inset: 0px auto auto 0px;
+  margin: 0px;
+  transform: translate(0px, 40px);
 
 }
