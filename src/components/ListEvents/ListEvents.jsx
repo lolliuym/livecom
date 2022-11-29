@@ -349,29 +349,29 @@ const ListEvents = () => {
         </div>
       </div>
       <nav className="d-inline-block mt-4">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
+        <ul className="pagination">
+          <li className="page-item">
+            <a className="page-link" href="#" aria-label="Previous">
               <span aria-hidden="true">&laquo;</span>
             </a>
           </li>
-          <li class="page-item">
-            <a class="page-link" href="#">
+          <li className="page-item">
+            <a className="page-link" href="#">
               1
             </a>
           </li>
-          <li class="page-item">
-            <a class="page-link" href="#">
+          <li className="page-item">
+            <a className="page-link" href="#">
               2
             </a>
           </li>
-          <li class="page-item">
-            <a class="page-link" href="#">
+          <li className="page-item">
+            <a className="page-link" href="#">
               3
             </a>
           </li>
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
+          <li className="page-item">
+            <a className="page-link" href="#" aria-label="Next">
               <span aria-hidden="true">&raquo;</span>
             </a>
           </li>

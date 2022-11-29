@@ -24,7 +24,7 @@ select *
 .box--calendar {
   position: relative;
 }
-.calendar {
+.calendar__listOfEvent {
   position: absolute;
     inset: 0px auto auto 0px;
     margin: 0px;

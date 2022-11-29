@@ -41,7 +41,7 @@ const ActionOfEvents = () => {
           })}
         </a>
 
-        <div className="calendar">
+        <div className="calendar__listOfEvent">
           <Calendar
             onChange={setDate}
             value={date}
