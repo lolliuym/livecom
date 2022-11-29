@@ -27,9 +27,6 @@ const Wordspace = () => {
               spaceBetween={5}
               slidesPerView={4}
               navigation
-             
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log("slide change")}
             >
               <SwiperSlide>
                 <div className="text-center wordspace__date active">
@@ -192,9 +189,7 @@ const Wordspace = () => {
               </div>
             </div>
           </div>
-          <button className="btn btn-primary mt-2" type="button">
-            Еще остальные&nbsp; <FontAwesomeIcon icon={faChevronDown} />
-          </button>
+           
         </div>
       </div>
     </div>

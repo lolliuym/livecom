@@ -36,7 +36,9 @@
   background:var(--bs-white);
   border-radius:10px;}
 
-
+.show {
+  display: block !important;
+}
 .border-none {
   border:none !important;
 }
