@@ -1,0 +1,20 @@
+{
+  "mapUsers": [
+    {      
+      "id": "",
+      "userName": "",
+      "password":""
+    }
+  ],
+  "mapEvents": [
+    {
+      "id": "",
+      "theme": "",
+      "description": "",
+      "address": "",
+      "img": "",
+      "data": "",
+      "linkToJoin": ""
+    }
+  ]
+}

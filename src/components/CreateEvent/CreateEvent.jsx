@@ -9,10 +9,82 @@ import {
   FullscreenControl,
   SearchControl,
   GeolocationControl,
-  Placemark,ObjectManager
+  Placemark,
+  ObjectManager,
 } from "react-yandex-maps";
 
 const CreateEvent = () => {
+  const [event, setEvent] = useState("");
+  const [document, setDocument] = useState([]);
+  const [theme, setTheme] = useState("");
+  const [typeEvent, setTypeEvent] = useState("");
+  const [price, setPrice] = useState("");
+  const [typeGroup, setTypeGroup] = useState("");
+  const [data, setData] = useState("");
+  const [clock, setClock] = useState("");
+  const [minute, setMinute] = useState("");
+  const [address, setAddress] = useState("");
+  const [linkToJoin, setLinkToJoin] = useState("");
+
+  const onChange = (event) => {
+    const isChecked = event.target.checked;
+    if (isChecked) {
+      setDocument([...document, event.target.value]);
+    } else {
+      const index = document.indexOf(event.target.value);
+      document.splice(index, 1);
+      setDocument(document);
+    }
+    console.log(document);
+  };
+
+  const article = {
+    id: Date.now(),
+    event,
+    document,
+    theme,
+    typeEvent,
+    price,
+    typeGroup,
+    data,
+    clock,
+    minute,
+    address,
+    linkToJoin,
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    fetchData();
+
+    setEvent("")
+    setDocument([])
+    setTheme("")
+    setTypeEvent("")
+    setPrice("")
+    setTypeGroup("")
+    setData("")
+    setClock("")
+    setMinute("")
+    setAddress("")
+    setLinkToJoin("")
+   
+  };
+
+  async function fetchData() {
+    const { data } = await axios
+      .post("/data/db.json", article)
+      .then((response) => {
+        console.log(response.data);
+      });
+    setPost(data);
+  }
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  
   const [isOpenModalCreateEvent, setIsOpenModalCreateEvent] = useState(false);
   const [date, setDate] = useState(new Date());
   const [isActiveCalendar, setActiveCalendar] = useState("false");
@@ -103,13 +175,18 @@ const CreateEvent = () => {
                         className="form-control"
                         id="theme"
                         placeholder="..."
+                        onChange={(e) => setTheme(e.target.value)}
                       ></input>
                     </div>
                     <div className="">
                       <label for="country" className="form-label">
                         Тематика
                       </label>
-                      <select className="form-select" id="country" required>
+                      <select
+                        className="form-select"
+                        onChange={(e) => setTypeEvent(e.target.value)}
+                        required
+                      >
                         <option value="">Выберите тематику</option>
                         {themeOptions.map((option, index) => (
                           <option
@@ -125,7 +202,11 @@ const CreateEvent = () => {
                       <label for="prices" className="form-label">
                         Тематика
                       </label>
-                      <select className="form-select" id="country" required>
+                      <select
+                        className="form-select"
+                        onChange={(e) => setPrice(e.target.value)}
+                        required
+                      >
                         <option value="">Выберите цену</option>
                         {priceOptions.map((option, index) => (
                           <option
@@ -141,7 +222,12 @@ const CreateEvent = () => {
                       <label for="access" className="form-label">
                         Тип встречи
                       </label>
-                      <select className="form-select" id="access" required>
+                      <select
+                        className="form-select"
+                        id="access"
+                        onChange={(e) => setTypeGroup(e.target.value)}
+                        required
+                      >
                         <option id="option" value="open">
                           Открытая
                         </option>
@@ -158,6 +244,7 @@ const CreateEvent = () => {
                         <button
                           className="btn btn-outline-primary"
                           onClick={handleToggleCalendar}
+                          onChange={(e) => setData(e.target.value)}
                         >
                           {date.toLocaleDateString("ru-ru", {
                             month: "short",
@@ -178,6 +265,7 @@ const CreateEvent = () => {
                         <select
                           className="form-select w-80"
                           id="clock"
+                          onChange={(e) => setClock(e.target.value)}
                           required
                         >
                           {arrayOfClocks.map((clock) => (
@@ -191,6 +279,7 @@ const CreateEvent = () => {
                           className="form-select w-80"
                           id="clock"
                           required
+                          onChange={(e) => setMinute(e.target.value)}
                         >
                           {arrayOfMinutes.map((minute) => (
                             <option id="option" value={`minute-${minute}`}>
@@ -204,10 +293,12 @@ const CreateEvent = () => {
                       <label for="theme" className="form-label">
                         Адрес
                       </label>
-                      <button className="btn btn-outline-primary d-block">
+                      <button
+                        className="btn btn-outline-primary d-block"
+                        onChange={(e) => setAddress(e.target.value)}
+                      >
                         Указать адрес
                       </button>
-                     
                     </div>
                     <div className="">
                       <label for="theme" className="form-label">
@@ -218,9 +309,11 @@ const CreateEvent = () => {
                         className="form-control"
                         id="chat"
                         placeholder="скинуть ссылку для перехода в чат группы"
+                        onChange={(e) => setLinkToJoin(e.target.value)}
                       ></input>
                     </div>
                   </div>
+
                   <div className="modal-footer">
                     <button
                       type="button"
