@@ -1,63 +1,54 @@
 import React from "react";
+
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import "./wordspace.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronLeft,
-  faChevronRight,
-  faChevronDown,
-  faCircle,
-} from "@fortawesome/free-solid-svg-icons";
 
 const Wordspace = () => {
+  const currentWeekSlideInfo = new Array(7).fill(null).map((day, index) => {
+    let newDay = new Date();
+    newDay.setDate(newDay.getDate() + index);
+    return newDay;
+  });
+  const getRussianWeek = (date: Date) =>
+    date.toLocaleDateString("ru-Ru", { weekday: "short" });
+  const getDate = (date: Date) => date.getDate();
+  const currentDay = new Date().getDate();
+
+  console.log(currentWeekSlideInfo);
+  console.log(getRussianWeek(currentWeekSlideInfo[1]));
+  console.log(getDate(currentWeekSlideInfo[1]));
+
   return (
     <div className="box px-4 p-4">
       <div className="wordscape">
         <div>
-          <div className="d-flex justify-content-between align-items-center align-items-lg-center">
+          <div className="text-start ">
             <h5>Декабрь</h5>
-            <div>
-              <FontAwesomeIcon className="cursor-pointer me-2" icon={faChevronLeft} />
-              <FontAwesomeIcon className="cursor-pointer" icon={faChevronRight} />
-            </div>
-          </div>
-          <div className="d-flex justify-content-between">
-            <div className="text-center wordspace__date active">
-              <h6 className=" fs-6">Пн</h6>
-              <p className="fw-bold  fs-5 m-0">09</p>
-            </div>
-            <div className="text-center wordspace__date ">
-              <h6 className=" fs-6">Пн</h6>
-              <p className="fw-bold  fs-5 m-0">09</p>
-              <div>
-              <FontAwesomeIcon
-                  className="fz-6 text-danger"
-                  icon={faCircle}
-                />
-                <FontAwesomeIcon className="fz-6 text-primary" icon={faCircle} />
-              </div>
-            </div>
-            <div className="text-center wordspace__date ">
-              <h6 className=" fs-6">Пн</h6>
-              <p className="fw-bold  fs-5 m-0">09</p>
-              <div>
-              <FontAwesomeIcon
-                  className="fz-6 text-danger"
-                  icon={faCircle}
-                />
-                <FontAwesomeIcon className="fz-6 text-primary" icon={faCircle} />
-              </div>
-            </div>
-            <div className="text-center wordspace__date ">
-              <h6 className=" fs-6">Пн</h6>
-              <p className="fw-bold  fs-5 m-0">09</p>
-              <div>
-              <FontAwesomeIcon
-                  className="fz-6 text-danger"
-                  icon={faCircle}
-                />
-                <FontAwesomeIcon className="fz-6 text-primary" icon={faCircle} />
-              </div>
-            </div>
+            <Swiper
+              modules={[Navigation, Pagination, Scrollbar, A11y]}
+              spaceBetween={5}
+              slidesPerView={4}
+              navigation
+            >
+              {currentWeekSlideInfo.map((day, index) => (
+                <SwiperSlide>
+                  <div
+                    id={index}
+                    className={`text-center wordspace__date ${
+                      getDate(day) == currentDay ? "active" : ""
+                    }`}
+                  >
+                    <h6 className=" fs-6">{getRussianWeek(day)}</h6>
+                    <p className="fw-bold  fs-5 m-0">{getDate(day)}</p>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
         <div className="hr"></div>
@@ -99,9 +90,6 @@ const Wordspace = () => {
               </div>
             </div>
           </div>
-          <button className="btn btn-primary mt-2" type="button">
-            Еще остальные&nbsp; <FontAwesomeIcon icon={faChevronDown} />
-          </button>
         </div>
       </div>
     </div>
