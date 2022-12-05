@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
+// @ts-ignore
+import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
+
 import "./listEvents.css";
 import "../../assets/styles/buttons.css";
 import ActionOfEvents from "../ActionOfEvents/ActionOfEvents";
@@ -6,9 +9,51 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFireFlameCurved, faShare } from "@fortawesome/free-solid-svg-icons";
 
 const ListEvents = () => {
+  mapboxgl.accessToken =
+    "pk.eyJ1IjoicnViaWFxdXRlIiwiYSI6ImNrdWZndTJ1MjBtOGsycHFrZmFxanFvM2QifQ.ftLft-x0arMll3Pd_A7Ghw";
+  const mapContainer = useRef(null);
+
+  const map = useRef(null);
+  const [lng, setLng] = useState(37.625090);
+  const [lat, setLat] = useState(55.751468);
+  const [zoom, setZoom] = useState(10);
+
+ 
+
+  const coordinates = [
+    [37.60588, 55.780046],
+    [37.642159, 55.797152],
+    [37.672974, 55.712488],
+    [37.587957, 55.678138],
+  ];
+
+  useEffect(() => {
+    if (map.current) return; // initialize map only once
+    map.current = new mapboxgl.Map({
+      container: mapContainer.current,
+      style: "mapbox://styles/mapbox/streets-v12",
+      center: [lng, lat],
+      zoom: zoom,
+    });
+
+    coordinates.map((coords) => {
+     return new mapboxgl.Marker({
+       color: "#000000",
+       scale: 0.75,
+       draggable: false,
+     })
+       .setLngLat(coords)
+       .addTo(map.current);
+    });
+    })
+    
+
   return (
     <div className="p-4 box">
       <ActionOfEvents />
+        <div>
+          <div ref={mapContainer} className="map-container" />
+        </div>
 
       <div className="mt-4 wrapper">
         <div className="wrapper__event">

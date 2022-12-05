@@ -7,10 +7,10 @@ import "react-calendar/dist/Calendar.css";
 
 const ActionOfEvents = () => {
   const [date, setDate] = useState(new Date());
-  const [isActiveCalendar, setActiveCalendar] = useState("false")
+  const [isActiveCalendar, setActiveCalendar] = useState(false)
 
   const handleToggleCalendar = () => {
-    setActiveCalendar(String(!isActiveCalendar))
+    setActiveCalendar(!isActiveCalendar)
   }
 
   return (
@@ -45,7 +45,7 @@ const ActionOfEvents = () => {
           <Calendar
             onChange={setDate}
             value={date}
-            className={` ${isActiveCalendar ? "d-none" : "d-block"}  `}
+            className={` ${isActiveCalendar ?  "d-block" : "d-none"}  `}
             locale="ru-Ru"
           />
         </div>
