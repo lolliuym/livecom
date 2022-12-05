@@ -17,7 +17,7 @@ const ListStories = () => {
           <div className="slider slider-img d-lg-flex justify-content-center align-items-end swiper-slide">
             <div className="slider-content">
               <div className="slider-avatar">
-                <img
+                <img alt=""
                   src="../assets/images/avatar.jpg"
                   width="40px"
                   height="40px"

@@ -1,8 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import CreateEvent from "../CreateEvent/CreateEvent";
-import logo from "../../assets/images/logo.png"
-
+import CreateEvent from "../CreateEvent/CreateEvent.tsx";
+ 
 const Header = () => {
   return (
     <div className="bg-white">
@@ -10,7 +9,7 @@ const Header = () => {
         <div className="container">
           <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
           <NavLink to="/" className="d-flex col-2 align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-          <img src={logo} className="me-2"  height="32" alt="LiveCom" />
+          <img src="" className="me-2"  height="32" alt="LiveCom" />
           </NavLink>
 
             <form className="col-6 mb-3 mb-lg-0  " role="search">

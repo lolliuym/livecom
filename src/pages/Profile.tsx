@@ -1,6 +1,6 @@
 import React from "react";
-import ProfileHeader from "../components/ProfileHeader/ProfileHeader";
-import ProfilePhoto from "../components/ProfilePhoto/ProfilePhoto";
+import ProfileHeader from "../components/ProfileHeader/ProfileHeader.tsx";
+import ProfilePhoto from "../components/ProfilePhoto/ProfilePhoto.tsx";
 
 const Profile = () => {
   return (

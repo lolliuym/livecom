@@ -1,7 +1,7 @@
 import React from "react";
 import "./listEvents.css";
 import "../../assets/styles/buttons.css";
-import ActionOfEvents from "../ActionOfEvents/ActionOfEvents";
+import ActionOfEvents from "../ActionOfEvents/ActionOfEvents.tsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFireFlameCurved, faShare } from "@fortawesome/free-solid-svg-icons";
 
