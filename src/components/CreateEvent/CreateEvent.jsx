@@ -12,8 +12,9 @@ import {
   Placemark,ObjectManager
 } from "react-yandex-maps";
 
-const CreateEvent = () => {
-  const [isOpenModalCreateEvent, setIsOpenModalCreateEvent] = useState(false);
+ const CreateEvent = () => {
+   
+   const [isOpenModalCreateEvent, setIsOpenModalCreateEvent] = useState(false);
   const [date, setDate] = useState(new Date());
   const [isActiveCalendar, setActiveCalendar] = useState("false");
   const getStringDigits = (length) =>
