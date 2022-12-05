@@ -10,7 +10,7 @@ const ActionOfEvents = () => {
   const [isActiveCalendar, setActiveCalendar] = useState("false")
 
   const handleToggleCalendar = () => {
-    setActiveCalendar(!isActiveCalendar)
+    setActiveCalendar(String(!isActiveCalendar))
   }
 
   return (

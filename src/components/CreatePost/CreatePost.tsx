@@ -11,7 +11,7 @@ const CreatePost = () => {
         <div className="row d-flex  ">
             <div className="col-1 d-flex justify-content-center align-items-center">
                 <div className="d-flex justify-content-center align-items-center">
-                  <img className="d-flex rounded-circle" width="50px" height="50px" src="../assets/img/avatar.jpg" />
+                  <img className="d-flex rounded-circle" width="50px" height="50px" src="../images/avatar.jpg" />
 
                   </div>
             </div>

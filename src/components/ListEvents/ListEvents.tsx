@@ -1,7 +1,7 @@
 import React from "react";
 import "./listEvents.css";
 import "../../assets/styles/buttons.css";
-import ActionOfEvents from "../ActionOfEvents/ActionOfEvents.tsx";
+import ActionOfEvents from "../ActionOfEvents/ActionOfEvents";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFireFlameCurved, faShare } from "@fortawesome/free-solid-svg-icons";
 
@@ -12,11 +12,8 @@ const ListEvents = () => {
 
       <div className="mt-4 wrapper">
         <div className="wrapper__event">
-          <div className="w-full thumbnail">
-            <img
-              src="../assets/images/thumbnail-1.webp"
-              className="w-full h-full"
-            />
+          <div className="d-flex w-full thumbnail">
+            <img src="../images/thumbnail-1.webp" className="w-full h-full" />
           </div>
           <div className="mt-4 flex-column d-flex">
             <div className="d-flex ">
@@ -42,19 +39,19 @@ const ListEvents = () => {
               <div className="me-2">
                 <img
                   className="-mr-4 rounded-circle"
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="35px"
                   height="35px"
                 />
                 <img
                   className="-mr-4 rounded-circle"
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="35px"
                   height="35px"
                 />
                 <img
                   className="-mr-4 rounded-circle"
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="35px"
                   height="35px"
                 />
@@ -96,11 +93,8 @@ const ListEvents = () => {
           </div>
         </div>
         <div className="wrapper__event">
-          <div className="w-full thumbnail">
-            <img
-              src="../assets/images/thumbnail-1.webp"
-              className="w-full h-full"
-            />
+          <div className=" d-flex w-full thumbnail">
+            <img src="../images/thumbnail-1.webp" className="w-full h-full" />
           </div>
           <div className="mt-4 flex-column d-flex">
             <div className="d-flex ">
@@ -126,19 +120,19 @@ const ListEvents = () => {
               <div className="me-2">
                 <img
                   className="-mr-4 rounded-circle"
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="35px"
                   height="35px"
                 />
                 <img
                   className="-mr-4 rounded-circle"
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="35px"
                   height="35px"
                 />
                 <img
                   className="-mr-4 rounded-circle"
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="35px"
                   height="35px"
                 />
@@ -180,11 +174,8 @@ const ListEvents = () => {
           </div>
         </div>
         <div className="wrapper__event">
-          <div className="w-full thumbnail">
-            <img
-              src="../assets/images/thumbnail-1.webp"
-              className="w-full h-full"
-            />
+          <div className=" d-flex w-full thumbnail">
+            <img src="../images/thumbnail-1.webp" className="w-full h-full" />
           </div>
           <div className="mt-4 flex-column d-flex">
             <div className="d-flex ">
@@ -210,19 +201,19 @@ const ListEvents = () => {
               <div className="me-2">
                 <img
                   className="-mr-4 rounded-circle"
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="35px"
                   height="35px"
                 />
                 <img
                   className="-mr-4 rounded-circle"
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="35px"
                   height="35px"
                 />
                 <img
                   className="-mr-4 rounded-circle"
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="35px"
                   height="35px"
                 />
@@ -264,11 +255,8 @@ const ListEvents = () => {
           </div>
         </div>
         <div className="wrapper__event">
-          <div className="w-full thumbnail">
-            <img
-              src="../assets/images/thumbnail-1.webp"
-              className="w-full h-full"
-            />
+          <div className=" d-flex w-full thumbnail">
+            <img src="../images/thumbnail-1.webp" className="w-full h-full" />
           </div>
           <div className="mt-4 flex-column d-flex">
             <div className="d-flex ">
@@ -294,19 +282,19 @@ const ListEvents = () => {
               <div className="me-2">
                 <img
                   className="-mr-4 rounded-circle"
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="35px"
                   height="35px"
                 />
                 <img
                   className="-mr-4 rounded-circle"
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="35px"
                   height="35px"
                 />
                 <img
                   className="-mr-4 rounded-circle"
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="35px"
                   height="35px"
                 />

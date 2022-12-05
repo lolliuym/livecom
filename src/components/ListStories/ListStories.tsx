@@ -18,7 +18,7 @@ const ListStories = () => {
             <div className="slider-content">
               <div className="slider-avatar">
                 <img alt=""
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="40px"
                   height="40px"
                   className="avatar--stories"
@@ -33,7 +33,7 @@ const ListStories = () => {
             <div className="slider-content">
               <div className="slider-avatar">
                 <img
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="40px"
                   height="40px"
                   className="avatar--stories"
@@ -48,7 +48,7 @@ const ListStories = () => {
             <div className="slider-content">
               <div className="slider-avatar">
                 <img
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="40px"
                   height="40px"
                   className="avatar--stories"
@@ -63,7 +63,7 @@ const ListStories = () => {
             <div className="slider-content">
               <div className="slider-avatar">
                 <img
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="40px"
                   height="40px"
                   className="avatar--stories"
@@ -78,7 +78,7 @@ const ListStories = () => {
             <div className="slider-content">
               <div className="slider-avatar">
                 <img
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="40px"
                   height="40px"
                   className="avatar--stories"

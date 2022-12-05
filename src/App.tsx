@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from "./components/Header/Header.tsx";
-import Wordspace from "./components/Wordspace/Wordspace.tsx";
-import Feed from "./pages/Feed.tsx";
-import Profile from "./pages/Profile.tsx";
+import Header from "./components/Header/Header";
+import Wordspace from "./components/Wordspace/Wordspace";
+import Feed from "./pages/Feed";
+import Profile from "./pages/Profile";
 
 const App = () => {
  

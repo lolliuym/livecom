@@ -19,7 +19,7 @@ const CreateEvent = () => {
   ];
 
   const handleToggleCalendar = () => {
-    setActiveCalendar(!isActiveCalendar);
+    setActiveCalendar(String(!isActiveCalendar));
   };
 
   return (
@@ -53,7 +53,7 @@ const CreateEvent = () => {
                   </div>
                   <div className="modal-body text-start">
                     <div className="">
-                      <label for="theme" className="form-label">
+                      <label htmlFor="theme" className="form-label">
                         Название
                       </label>
                       <input
@@ -64,7 +64,7 @@ const CreateEvent = () => {
                       ></input>
                     </div>
                     <div className="">
-                      <label for="country" className="form-label">
+                      <label htmlFor="country" className="form-label">
                         Тематика
                       </label>
                       <select className="form-select" id="country" required>
@@ -81,7 +81,7 @@ const CreateEvent = () => {
                       </select>
                     </div>
                     <div className="">
-                      <label for="access" className="form-label">
+                      <label htmlFor="access" className="form-label">
                         Тип встречи
                       </label>
                       <select className="form-select" id="access" required>
@@ -94,7 +94,7 @@ const CreateEvent = () => {
                       </select>
                     </div>
                     <div className="">
-                      <label for="access" className="form-label">
+                      <label htmlFor="access" className="form-label">
                         Время начала
                       </label>
                       <div className="d-flex align-items-center">
@@ -144,13 +144,13 @@ const CreateEvent = () => {
                       </div>
                     </div>
                     <div className="">
-                      <label for="theme" className="form-label">
+                      <label htmlFor="theme" className="form-label">
                         Адресс
                       </label>
                       <button className="btn btn-outline-primary d-block">Указать адресс</button>
                     </div>
                     <div className="">
-                      <label for="theme" className="form-label">
+                      <label htmlFor="theme" className="form-label">
                         Чат сообщества
                       </label>
                       <input
