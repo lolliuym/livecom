@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, NavLink, Route } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHouse,
@@ -16,14 +16,14 @@ const Sidebar = () => {
       <ul className="list-unstyled">
         <li className="list-item">
           <NavLink to="/profile">
-            <a className="link  text-decoration-none" href="#">
+            <a className="link text-decoration-none" href="#">
               <FontAwesomeIcon icon={faHouse} />
               Моя страница
             </a>
           </NavLink>
         </li>
         <li className="list-item ">
-          <NavLink to="/feed">
+          <NavLink to="/">
             <a className="link text-decoration-none" href="#">
               <FontAwesomeIcon icon={faRectangleList} />
               Новости
@@ -39,12 +39,12 @@ const Sidebar = () => {
         <li className="list-item">
           <a className="link text-decoration-none" href="#">
             <FontAwesomeIcon icon={faPhotoFilm} />
-            Фотогравии
+            Фотографии
           </a>
         </li>
         <li className="list-item">
           <a className="link text-decoration-none" href="#">
-            {" "}
+    
             <FontAwesomeIcon icon={faArrowsTurnToDots} />
             Настройки
           </a>

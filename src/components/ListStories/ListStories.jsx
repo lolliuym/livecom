@@ -5,7 +5,7 @@ import "./listStories.css";
 
 const ListStories = () => {
   return (
-    <div className="box px-4 p-4 mt-4">
+    <div className="p-4 px-4 box">
       <h3 className="text-start">Истории</h3>
       <Swiper
         spaceBetween={10}
@@ -17,14 +17,14 @@ const ListStories = () => {
           <div className="slider slider-img d-lg-flex justify-content-center align-items-end swiper-slide">
             <div className="slider-content">
               <div className="slider-avatar">
-                <img
-                  src="../assets/images/avatar.jpg"
+                <img alt=""
+                  src="../images/avatar.jpg"
                   width="40px"
                   height="40px"
                   className="avatar--stories"
                 />
               </div>
-              <p className="fw-bold text-primary mt-4">Paragraph</p>
+              <p className="mt-4 fw-bold text-primary">Paragraph</p>
             </div>
           </div>
         </SwiperSlide>
@@ -33,13 +33,13 @@ const ListStories = () => {
             <div className="slider-content">
               <div className="slider-avatar">
                 <img
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="40px"
                   height="40px"
                   className="avatar--stories"
                 />
               </div>
-              <p className="fw-bold text-primary mt-4">Paragraph</p>
+              <p className="mt-4 fw-bold text-primary">Paragraph</p>
             </div>
           </div>
         </SwiperSlide>
@@ -48,13 +48,13 @@ const ListStories = () => {
             <div className="slider-content">
               <div className="slider-avatar">
                 <img
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="40px"
                   height="40px"
                   className="avatar--stories"
                 />
               </div>
-              <p className="fw-bold text-primary mt-4">Paragraph</p>
+              <p className="mt-4 fw-bold text-primary">Paragraph</p>
             </div>
           </div>
         </SwiperSlide>
@@ -63,13 +63,13 @@ const ListStories = () => {
             <div className="slider-content">
               <div className="slider-avatar">
                 <img
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="40px"
                   height="40px"
                   className="avatar--stories"
                 />
               </div>
-              <p className="fw-bold text-primary mt-4">Paragraph</p>
+              <p className="mt-4 fw-bold text-primary">Paragraph</p>
             </div>
           </div>
         </SwiperSlide>
@@ -78,13 +78,13 @@ const ListStories = () => {
             <div className="slider-content">
               <div className="slider-avatar">
                 <img
-                  src="../assets/images/avatar.jpg"
+                  src="../images/avatar.jpg"
                   width="40px"
                   height="40px"
                   className="avatar--stories"
                 />
               </div>
-              <p className="fw-bold text-primary mt-4">Paragraph</p>
+              <p className="mt-4 fw-bold text-primary">Paragraph</p>
             </div>
           </div>
         </SwiperSlide>

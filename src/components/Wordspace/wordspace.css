@@ -1,61 +1,97 @@
 .fz-6 {
-  font-size:6px;
+  font-size: 6px;
+}
+
+.swiper {
+  height: 12=40px !important;
+  padding-top: 30px !important;
+  top: -30px !important;
+}
+
+.swiper-wrapper {
+  height: 100px !important;
+}
+
+.swiper-button-prev {
+  right: 40px !important;
+}
+
+.swiper-button-next {
+  right: 10px !important;
+}
+
+.swiper-button-prev, .swiper-button-next {  
+  position: absolute !important;
+  top: 0 !important;
+  transform: translate(100%, 100%);
+  width: auto;
+  height: auto;
+  justify-content: initial !important;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  font-size: 20px !important;
+}
+
+.swiper-slide:hover {
+  cursor: pointer;
+  border: none !important;
 }
 
 .wordspace {
-  border-radius:10px;
-  background:var(--bs-white);
-  padding:15px;
+  border-radius: 10px;
+  background: var(--bs-white);
+  padding: 15px;
 }
 
 .wordspace__date {
-  color:var(--bs-gray-500);
-  border-radius:5px;
-  padding:9px;
-  height:auto;
-  cursor:pointer;
+  color: var(--bs-gray-500);
+  border-radius: 5px;
+  padding: 9px;
+  height: 100%;
+  cursor: pointer;
+  width: 100%;
 }
 
 .wordspace__date.active {
-  background:var(--bs-blue) !important;
-  color:var(--bs-white) !important;
+  background: var(--bs-blue) !important;
+  color: var(--bs-white) !important;
 }
 
 .wordspace__date:hover {
-  background:var(--bs-gray-300);
+  background: var(--bs-gray-300);
  
 }
 
 .hr {
-  border-bottom:1px solid var(--bs-gray-500);
-  margin-top:20px;
-  margin-bottom:10px;
+  border-bottom: 1px solid var(--bs-gray-500);
+  margin-bottom: 10px;
 }
 
 .timetable__date {
-  background:var(--bs-white);
-  border-radius:5px;
-  padding:9px;
-  height:70px;
-  text-align:center;
+  background: var(--bs-white);
+  border-radius: 5px;
+  padding-right: 9px;
+  height: 70px;
+  text-align: center;
 }
  
 .timetable__content {
-  background:var(--bs-light);
-  border-radius:5px;
-  padding:9px;
-  height:100%;
+  background: var(--bs-light);
+  border-radius: 5px;
+  height: 100%;
 }
 
 .timetable__info {
-  border-left:2px solid var(--bs-yellow) ;
+  border-left: 2px solid var(--bs-yellow) ;
+  padding: 10px;
 }
 
 .wordspace .btn.btn-primary {
-  font-size:12px;
-  background:var(--bs-body-bg);
-  color:var(--bs-btn-border-color);
-  border-style:none;
-  border-left-width:0;
-  border-radius:15px;
+  font-size: 12px;
+  background: var(--bs-body-bg);
+  color: var(--bs-btn-border-color);
+  border-style: none;
+  border-left-width: 0;
+  border-radius: 15px;
 }

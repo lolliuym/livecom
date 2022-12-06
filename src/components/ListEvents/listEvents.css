@@ -1,37 +1,64 @@
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) ) ;
+  background-color: #fff;
+
+}
+
+.wrapper__event {
+  display: grid;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.mapWrapper {
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.map-container {
+  width: 400px;
+  height: 300px
+}
+
 .thumbnail {
-  height:17rem;
+  height: 17rem;
 }
 
 .card-content {
-  padding:10px;
-  width:100px;
-  color:var(--bs-white);
-  background:var(--bs-yellow);
-  margin-top:10px;
-  border-radius:10px;
+  padding: 10px;
+  width: 100px;
+  color: var(--bs-white);
+  background: var(--bs-yellow);
+  margin-top: 10px;
+  border-radius: 10px;
 }
 
 .card-members {
-  padding:5px 10px;
-  background:var(--bs-gray-600);
-  display:flex;
-  border-radius:50px;
+  padding: 5px 10px;
+  background: var(--bs-gray-600);
+  display: flex;
+  border-radius: 50px;
 }
 
 .card-members_strong {
-  background:var(--bs-yellow);
-  width:50px;
-  padding:2px;
-  border-radius:15px;
+  background: var(--bs-yellow);
+  width: 50px;
+  padding: 2px;
+  border-radius: 15px;
 }
 
 .card-action {
-  border-radius:10px;
-  display:flex;
-  margin:10px 0;
+  border-radius: 10px;
+  display: flex;
+  margin: 10px 0;
 }
 
 .card-people {
-  display:flex;
-  padding:5px 10px;
+  display: flex;
+  padding: 10px 0px;
 }
+
