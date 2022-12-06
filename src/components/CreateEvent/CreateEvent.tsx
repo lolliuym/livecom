@@ -60,7 +60,7 @@ const CreateEvent = () => {
                         type="text"
                         className="form-control"
                         id="theme"
-                        placeholder="..."
+                        placeholder="..." required
                       ></input>
                     </div>
                     <div className="">
